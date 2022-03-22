@@ -49,37 +49,43 @@ header nav {
 /* ------------
     MAIN
 -------------*/
-main > section {
-    height: 100vh;
-}
-
 #first-section {
     background-color: red;
+    color: yellow;
 }
 
 #second-section {
     background-color: green;
+    color: yellow;
 }
 
 #third-section {
     background-color: yellow;
+    color: green;
 }
 
-main section div.product {
+main > section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+section img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-div.product img {
-    max-height: 350px;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 .caption {
     text-transform: uppercase;
-    color: yellow;
     text-align: center;
     font-size: 22px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
