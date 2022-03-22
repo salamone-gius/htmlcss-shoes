@@ -8,16 +8,10 @@
 }
 
 html {
-    scroll-behavior: smooth;   
+    scroll-behavior: smooth;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-
-/* ------------
-    COMMONS
--------------*/
-main > section {
-    height: 100vh;
-}
 
 
 /* ------------
@@ -47,16 +41,18 @@ header nav {
     position: fixed;
     top: 30px;
     right: 20px;
+    z-index: 10;
 }
-
-
-
 
 
 
 /* ------------
     MAIN
 -------------*/
+main > section {
+    height: 100vh;
+}
+
 #first-section {
     background-color: red;
 }
@@ -68,3 +64,22 @@ header nav {
 #third-section {
     background-color: yellow;
 }
+
+main section div.product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.product img {
+    max-height: 350px;
+}
+
+.caption {
+    text-transform: uppercase;
+    color: yellow;
+    text-align: center;
+    font-size: 22px;
+}
+
